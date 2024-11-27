@@ -13,7 +13,7 @@ import {
   mdiOpenInNew,
 } from "@mdi/js";
 
-import styles from "@/styles/Links.module.css";
+import styles from "@/styles/Menu.module.css";
 import clyde from "../../../public/brand/discord-mark-black.svg";
 import itchio from "../../../public/brand/itchio-textless-black.svg";
 import steam from "../../../public/brand/steam_logo.png";

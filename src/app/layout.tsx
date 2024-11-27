@@ -8,8 +8,8 @@ import Footer from "@/components/Footer/Footer";
 
 import "./globals.css";
 import styles from "@/styles/Layout.module.css";
-import Links from "@/components/Links/Links";
-import Menu from "@/components/Links/Menu";
+import Menu from "@/components/Menu/Menu";
+import Race from "@/components/Race/Race";
 
 export const metadata: Metadata = {
   title: "Harc Wesnothért",
@@ -48,7 +48,6 @@ export default function RootLayout({
                 </div>
 
                 <nav>
-                  {/* <Links /> */}
                   <Menu />
                 </nav>
               </div>
