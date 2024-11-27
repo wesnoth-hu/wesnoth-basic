@@ -338,6 +338,16 @@ export default function Menu() {
           <div className={styles.hamburgerMenu}>
             <div className={styles.navitem}>
               <Link
+                href="https://www.facebook.com/MagyarWesnothKozosseg"
+                target="_blank"
+                className={styles.link}
+              >
+                <Icon path={mdiFacebook} size={0.8} color={"#000000"} />{" "}
+                Facebook
+              </Link>
+            </div>
+            <div className={styles.navitem}>
+              <Link
                 href="https://store.steampowered.com/app/599390/Battle_for_Wesnoth/"
                 target="_blank"
                 className={styles.link}
