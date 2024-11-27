@@ -10,7 +10,6 @@ import {
   mdiLinux,
   mdiFacebook,
   mdiMicrosoftWindows,
-  mdiOpenInNew,
 } from "@mdi/js";
 
 import styles from "@/styles/Menu.module.css";
