@@ -40,7 +40,7 @@ export default function RootLayout({
               <div className={styles.fejlec}>
                 <div className={styles.logo}>
                   <Image
-                    src="/logo-hu_1.18.3.png"
+                    src="/logo-hu_1.18.4.png"
                     alt="Hungarian Wesnoth Logo"
                     width={415}
                     height={189}

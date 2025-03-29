@@ -2,22 +2,30 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"
 import styles from "@/styles/Footer.module.css";
 
 export default function Footer() {
   return (
     <>
       <div className={styles.footer}>
-        <div>&copy; Magyar Wesnoth Közösség 2005-2021, 2024</div>
+        <div>&copy; Magyar Wesnoth Közösség 2005-2021, 2024-2025</div>
         <div className={styles.supporters}>
           Támogatók:{" "}
-          <Image
-            src="logo-react.svg"
-            width={18}
-            height={18}
-            alt="ReactJS Logo"
-          />
-          <Image src="logo-next.svg" width={18} height={18} alt="NextJS Logo" />
+          <Link href="https://react.dev" target="_blank">
+            <Image
+              src="logo-react.svg"
+              width={18}
+              height={18}
+              alt="ReactJS Logo"
+            />
+          </Link>
+          <Link href="https://nextjs.org" target="_blank">
+            <Image src="logo-next.svg" width={18} height={18} alt="NextJS Logo" />
+          </Link>
+          <Link href="https://pictogrammers.com" target="_blank">
+            <Image src="/picto.png" width={18} height={18} alt="PictoGrammers Icon" />
+          </Link>
         </div>
         <div>
           <a

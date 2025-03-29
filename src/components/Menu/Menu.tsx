@@ -13,9 +13,6 @@ import {
 } from "@mdi/js";
 
 import styles from "@/styles/Menu.module.css";
-import clyde from "../../../public/brand/discord-mark-black.svg";
-import itchio from "../../../public/brand/itchio-textless-black.svg";
-import steam from "../../../public/brand/steam_logo.png";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -157,7 +154,7 @@ export default function Menu() {
             target="_blank"
             className={styles.link}
           >
-            <Image src={clyde} width={20} height={20} alt="Discord Logo" />{" "}
+            <Image src={"/brand/discord-mark-black.svg"} width={20} height={20} alt="Discord Logo" />{" "}
             Discord
           </Link>
         </div>
@@ -176,7 +173,7 @@ export default function Menu() {
             target="_blank"
             className={styles.link}
           >
-            <Image src={steam} width={20} height={20} alt="Steam Logo" /> Steam
+            <Image src={"/brand/steam_logo.png"} width={20} height={20} alt="Steam Logo" /> Steam
           </Link>
         </div>
         <div className={styles.navitem}>
@@ -185,7 +182,7 @@ export default function Menu() {
             target="_blank"
             className={styles.link}
           >
-            <Image src={itchio} width={20} height={20} alt="Itch.io Logo" />{" "}
+            <Image src={"/brand/itchio-textless-black.svg"} width={20} height={20} alt="Itch.io Logo" />{" "}
             <Icon path={mdiMicrosoftWindows} size={0.8} color={"#000000"} />{" "}
             <Icon path={mdiApple} size={0.8} color={"#000000"} /> Windows /
             macOS
@@ -212,7 +209,7 @@ export default function Menu() {
             }}
             target="_blank"
           >
-            <Image src={clyde} width={20} height={20} alt="Discord Logo" />{" "}
+            <Image src={"/brand/discord-mark-black.svg"} width={20} height={20} alt="Discord Logo" />{" "}
             Discord
           </Link>
         </div>
@@ -258,7 +255,7 @@ export default function Menu() {
                     setIsOpen(false);
                   }}
                 >
-                  <Image src={steam} width={20} height={20} alt="Steam Logo" />{" "}
+                  <Image src={"/brand/steam_logo.png"} width={20} height={20} alt="Steam Logo" />{" "}
                   Steam
                 </Link>
               </div>
@@ -272,7 +269,7 @@ export default function Menu() {
                   }}
                 >
                   <Image
-                    src={itchio}
+                    src={"/brand/itchio-textless-black.svg"}
                     width={20}
                     height={20}
                     alt="Itch.io Logo"
@@ -312,7 +309,7 @@ export default function Menu() {
               setIsOpen(false);
             }}
           >
-            <Image src={clyde} width={20} height={20} alt="Discord Logo" />{" "}
+            <Image src={"/brand/discord-mark-black.svg"} width={20} height={20} alt="Discord Logo" />{" "}
             Discord
           </Link>
         </div>
@@ -355,7 +352,7 @@ export default function Menu() {
                   setIsOpen(false);
                 }}
               >
-                <Image src={steam} width={20} height={20} alt="Steam Logo" />{" "}
+                <Image src={"/brand/steam_logo.png"} width={20} height={20} alt="Steam Logo" />{" "}
                 Steam
               </Link>
             </div>
@@ -368,7 +365,7 @@ export default function Menu() {
                   setIsOpen(false);
                 }}
               >
-                <Image src={itchio} width={20} height={20} alt="Itch.io Logo" />{" "}
+                <Image src={"/brand/itchio-textless-black.svg"} width={20} height={20} alt="Itch.io Logo" />{" "}
                 <Icon path={mdiMicrosoftWindows} size={0.8} color={"#000000"} />{" "}
                 <Icon path={mdiApple} size={0.8} color={"#000000"} />
               </Link>
