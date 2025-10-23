@@ -6,11 +6,10 @@ import Image from "next/image";
 import Icon from "@mdi/react";
 import {
   mdiMenu,
-  mdiApple,
   mdiLinux,
   mdiFacebook,
-  mdiMicrosoftWindows,
 } from "@mdi/js";
+import { Item } from "./Item";
 
 import styles from "@/styles/Menu.module.css";
 
@@ -148,55 +147,35 @@ export default function Menu() {
   return (
     <>
       <div className={styles.nav}>
-        <div className={styles.navitem}>
-          <Link
-            href="https://discord.gg/a9YHdtq"
-            target="_blank"
-            className={styles.link}
-          >
-            <Image src={"/brand/discord-mark-black.svg"} width={20} height={20} alt="Discord Logo" />{" "}
-            Discord
-          </Link>
-        </div>
-        <div className={styles.navitem}>
-          <Link
-            href="https://www.facebook.com/MagyarWesnothKozosseg"
-            target="_blank"
-            className={styles.link}
-          >
-            <Icon path={mdiFacebook} size={0.8} color={"#000000"} /> Facebook
-          </Link>
-        </div>
-        <div className={styles.navitem}>
-          <Link
-            href="https://store.steampowered.com/app/599390/Battle_for_Wesnoth/"
-            target="_blank"
-            className={styles.link}
-          >
-            <Image src={"/brand/steam_logo.png"} width={20} height={20} alt="Steam Logo" /> Steam
-          </Link>
-        </div>
-        <div className={styles.navitem}>
-          <Link
-            href="https://wesnoth.itch.io/battle-for-wesnoth"
-            target="_blank"
-            className={styles.link}
-          >
-            <Image src={"/brand/itchio-textless-black.svg"} width={20} height={20} alt="Itch.io Logo" />{" "}
-            <Icon path={mdiMicrosoftWindows} size={0.8} color={"#000000"} />{" "}
-            <Icon path={mdiApple} size={0.8} color={"#000000"} /> Windows /
-            macOS
-          </Link>
-        </div>
-        <div className={styles.navitem}>
-          <Link
-            href="https://flathub.org/apps/details/org.wesnoth.Wesnoth"
-            target="_blank"
-            className={styles.link}
-          >
-            <Icon path={mdiLinux} size={0.8} color={"#000000"} /> Linux
-          </Link>
-        </div>
+        <Item
+          style={{ navitem: styles.navitem, link: styles.link }}
+          itemLink={{ href: "https://discord.gg/a9YHdtq", target: "_blank" }}
+          itemImage={{ link: "/brand/discord-mark-black.svg", alt: "Discord Logo" }}
+          itemText={"Discord"}
+        />
+        <Item
+          style={{ navitem: styles.navitem, link: styles.link }}
+          itemLink={{ href: "https://www.facebook.com/MagyarWesnothKozosseg", target: "_blank" }}
+          itemIcon={{ path: mdiFacebook, size: 0.8, color: "#000000" }}
+          itemText={"Facebook"}
+        />
+        <Item
+          style={{ navitem: styles.navitem, link: styles.link }}
+          itemLink={{ href: "https://store.steampowered.com/app/599390/Battle_for_Wesnoth/", target: "_blank" }}
+          itemImage={{ link: "/brand/steam_logo.png", alt: "Steam Logo" }}
+          itemText={"Steam"}
+        />
+        <Item
+          style={{ navitem: styles.navitem, link: styles.link }}
+          itemLink={{ href: "https://wesnoth.itch.io/battle-for-wesnoth", target: "_blank" }}
+          itemImage={{ link: "/brand/itchio-textless-black.svg", alt: "Itch.io Logo" }}
+          itemText={"Windows / macOS"}
+        />
+        <Item
+          style={{ navitem: styles.navitem, link: styles.link }}
+          itemLink={{ href: "https://flathub.org/apps/details/org.wesnoth.Wesnoth", target: "_blank" }}
+          itemIcon={{ path: mdiLinux, size: 0.8, color: "#000000" }}
+          itemText={"Linux"} />
       </div>
 
       <div className={styles.shrunk950}>
