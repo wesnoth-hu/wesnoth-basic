@@ -253,12 +253,7 @@ export default function Menu() {
                     height={20}
                     alt="Itch.io Logo"
                   />{" "}
-                  <Icon
-                    path={mdiMicrosoftWindows}
-                    size={0.8}
-                    color={"#000000"}
-                  />{" "}
-                  <Icon path={mdiApple} size={0.8} color={"#000000"} />
+                  Win/macOS
                 </Link>
               </div>
               <div className={styles.navitem}>
@@ -345,8 +340,7 @@ export default function Menu() {
                 }}
               >
                 <Image src={"/brand/itchio-textless-black.svg"} width={20} height={20} alt="Itch.io Logo" />{" "}
-                <Icon path={mdiMicrosoftWindows} size={0.8} color={"#000000"} />{" "}
-                <Icon path={mdiApple} size={0.8} color={"#000000"} />
+                Win/macOS
               </Link>
             </div>
             <div className={styles.navitem}>

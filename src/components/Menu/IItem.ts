@@ -1,5 +1,3 @@
-import IconProps from "@mdi/react";
-
 export interface ItemProps {
   style: {
     navitem: string;
@@ -14,6 +12,6 @@ export interface ItemProps {
     link: string;
     alt: string;
   },
-  itemIcon?: React.FC<typeof IconProps>,
+  itemIcon?: { path: string; size: number; color: string; };
   itemText: string;
 }
