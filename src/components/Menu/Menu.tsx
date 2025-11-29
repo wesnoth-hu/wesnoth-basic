@@ -169,7 +169,7 @@ export default function Menu() {
           style={{ navitem: styles.navitem, link: styles.link }}
           itemLink={{ href: "https://wesnoth.itch.io/battle-for-wesnoth", target: "_blank" }}
           itemImage={{ link: "/brand/itchio-textless-black.svg", alt: "Itch.io Logo" }}
-          itemText={"Windows / macOS"}
+          itemText={"Win/macOS"}
         />
         <Item
           style={{ navitem: styles.navitem, link: styles.link }}

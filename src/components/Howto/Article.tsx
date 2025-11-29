@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Articles } from "./Articles";
+import { IArticle } from "./IArticle";
 
 export default function Article() {
   const [selectedArticle, setSelectedArticle] = React.useState<string | null>(
@@ -41,7 +42,7 @@ export default function Article() {
       ) : (
         <div style={{ textAlign: "center" }}>
           <h2>Hogyan játsszuk</h2>
-          {Articles.map((article) => (
+          {Articles.map((article: IArticle) => (
             <div
               key={article.id}
               style={{
